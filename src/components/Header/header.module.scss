@@ -1,1 +1,23 @@
-// TODO
+.headerContainer{
+    height: 5rem;
+    max-width: 764px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.headerContent{
+    height: 5rem;
+    // margin-top: 2.5rem;
+
+    display: flex;
+    align-items: center;
+
+    img{
+        height: 1.6rem;
+        cursor: pointer;
+
+        &:hover{
+            filter: brightness(0.9);
+        }
+    }
+}

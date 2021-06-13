@@ -1,1 +1,23 @@
-// TODO
+.info{
+    color: var(--gray-150);
+    display: flex;
+    align-items: center;
+    margin-top: 1.4375rem;
+
+    span{
+        display: flex;
+        align-items: center;
+
+        time{
+            text-transform: capitalize;
+        }
+
+        span, time {
+            margin-left: 0.5rem;
+        }
+
+        & + span{
+            margin-left: 1.5rem;
+        }
+    }
+}

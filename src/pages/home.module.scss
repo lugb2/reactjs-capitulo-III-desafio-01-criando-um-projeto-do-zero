@@ -1,1 +1,58 @@
-// TODO
+.container{
+    height: 100vh;
+    padding: 0 2rem;
+
+    padding-top: 2.5rem;
+
+    .content{
+        max-width: 764px;
+        margin: 0 auto;
+    }
+
+    .posts{
+        margin-top: 2.54rem;
+
+        .post{
+            display: block;
+            cursor: pointer;
+            
+            h1{
+                font-size: 1.75rem; // 28px
+                line-height: 2.125rem; // 34px
+            }
+
+            p{
+                font-size: 1.125rem; // 18px
+                line-height: 1.385rem; // 22px
+                color: var(--gray-200);
+                margin-top: 0.5625rem;
+
+                // opacity: 0.2;
+            }
+
+            & + .post{
+                margin-top: 3rem;
+            }
+
+            &:hover{
+                filter: brightness(0.9);
+            }
+        }
+
+    }
+
+    .buttonNextPage{
+        background: none;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        color: var(--pink-100);
+        font-size: 1.125rem; // 18px
+        line-height: 1.385rem;
+        margin-top: 3rem;
+
+        &:hover{
+            filter: brightness(0.9);
+        }
+    }
+}
