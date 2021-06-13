@@ -118,7 +118,9 @@ export default function Home({ postsPagination }: HomeProps) {
 									key={post.uid}
 									className={styles.post}
 									onClick={() => {
-										router.push(`/post/${post.uid}`, {}, {});
+
+										// foi necessário enviar os parâmetros opcionais para o teste passar
+										router.push(`/post/${post.uid}`, '', {});
 									}}
 								>
 									<h1>{post.data.title}</h1>
